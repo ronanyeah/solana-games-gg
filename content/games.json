@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Star Atlas",
+    "description": "A grand strategy game of space exploration, territorial conquest, political domination, and more.",
+    "website": "https://staratlas.com",
+    "x": "staratlas",
+    "nfts": [],
+    "tokens": ["ATLAS", "POLIS"],
+    "genres": ["mmorpg"]
+  },
+  {
+    "name": "The Heist",
+    "description": "A high-stakes, risk-based game of crime, corruption... and bananas.",
+    "website": "https://theheist.game",
+    "x": "playtheheist",
+    "nfts": ["theheist"],
+    "tokens": ["COCO", "NANA"],
+    "genres": ["strategy"]
+  },
+  {
+    "name": "Rude Golems",
+    "description": "War is upon us, lets battle!",
+    "website": "https://rudegolems.com",
+    "x": "RudeGolems",
+    "nfts": ["rude_golems"],
+    "tokens": [],
+    "genres": ["rpg"]
+  },
+  {
+    "name": "Alpha League Racing",
+    "description": "The ultimate time-attack racing game.",
+    "website": "https://www.alphaleagueracing.com",
+    "x": "aleague_racing",
+    "nfts": ["alphaleagueracing"],
+    "tokens": [],
+    "genres": ["racing"]
+  },
+  {
+    "name": "Pixel Guild",
+    "description": "Heroes, Spells and Monsters accompanied by fantastic gameplay and a mystical soundtrack.",
+    "website": "https://www.pixelguild.gg",
+    "x": "PixelGuild_SOL",
+    "nfts": ["pixel_guild_loot_legends"],
+    "tokens": ["PIXEL"],
+    "genres": ["platforming"]
+  },
+  {
+    "name": "AGE of SAM",
+    "description": "Play as Hero or Villain in a Galactic Battle on the Dark Side of the Moon.",
+    "website": "https://ageofsam.io",
+    "x": "ageofsamnft",
+    "nfts": ["aos", "endless"],
+    "tokens": [],
+    "genres": ["rpg"]
+  },
+  {
+    "name": "The Sol Den",
+    "description": "Three rival gyms competing for fame and glory.",
+    "website": "https://solden.io",
+    "x": "TheSolDenNFTs",
+    "nfts": ["thesolden"],
+    "tokens": [],
+    "genres": ["fighting"]
+  },
+  {
+    "name": "The Remnants",
+    "description": "Spend your time exploring Longwood Valley, gathering loot, crafting items and obtaining land.",
+    "website": "https://theremnants.app",
+    "x": "remnantsnft",
+    "nfts": ["the_remnants_", "remnant_camps"],
+    "tokens": [],
+    "genres": ["survival"]
+  },
+  {
+    "name": "Reavers",
+    "description": "Plunder bustling cities, raid lucrative docks, and steer clear of prison or the perils of mutiny.",
+    "website": "https://reavers.xyz",
+    "x": "reaversnft",
+    "nfts": ["reavers"],
+    "tokens": ["BOOTY"],
+    "genres": ["strategy"]
+  },
+  {
+    "name": "DeFi Land",
+    "description": "DeFi Land is a multi-chain agriculture-simulation game created to gamify Decentralized Finance.",
+    "website": "https://defiland.app",
+    "x": "DeFi_Land",
+    "nfts": ["defiland_gen0"],
+    "tokens": ["DFL"],
+    "genres": ["farming"]
+  }
+]

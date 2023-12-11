@@ -1,1 +1,1 @@
-# solana-games-gg
+# solanagames.gg
