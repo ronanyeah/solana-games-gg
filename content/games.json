@@ -22,8 +22,8 @@
     "description": "War is upon us, lets battle!",
     "website": "https://rudegolems.com",
     "x": "RudeGolems",
-    "nfts": ["rude_golems"],
-    "tokens": [],
+    "nfts": ["rude_golems", "rude_demons"],
+    "tokens": ["RUDE"],
     "genres": ["rpg"]
   },
   {
