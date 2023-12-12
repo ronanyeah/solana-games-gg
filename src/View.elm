@@ -6,7 +6,7 @@ import Element.Background as Background
 import Element.Border as Border
 import Element.Font as Font
 import FlatColors.FlatUIPalette
-import Helpers.View exposing (cappedWidth, whenAttr)
+import Helpers.View exposing (cappedWidth, when, whenAttr)
 import Html exposing (Html)
 import Html.Attributes
 import Img
@@ -29,7 +29,7 @@ view model =
             [ width fill
             , height fill
             , Background.color colors.background
-            , monospaceFont
+            , mainFont
             ]
 
 
@@ -47,26 +47,41 @@ viewBody model =
 
 
 viewHeader model =
-    [ text
-        ((model.icons
-            |> List.head
-            |> Maybe.withDefault ""
-         )
-            ++ " SOLANA GAMES"
-        )
-        |> el [ alignTop, Font.size 30, Font.bold, Font.color white ]
-    , [ para [] "All the Solana games that are ready to play right now."
-      , text "More resources"
-            |> el [ Font.underline ]
+    [ [ text
+            (model.icons
+                |> List.head
+                |> Maybe.withDefault ""
+            )
+      , text "SOLANA GAMES ://"
+            |> el [ Font.underline, Font.size (fork model.isMobile 17 27) ]
+      ]
+        |> row
+            [ displayFont
+            , spacing 14
+            , alignTop
+            , Font.size 30
+            , Font.bold
+            , Font.color white
+            ]
+    , [ para [ Font.bold, Font.size 22, monospaceFont ] "#OPOS - Only playable on Solana"
+      , para [ Font.size 17 ] "All the Solana games that can be played on Mainnet right now."
+      , newTabLink
+            [ hover
+            , Font.size 17
+            , Font.underline
+            ]
+            { label = text "More resources"
+            , url = "https://gist.github.com/ronanyeah/8c3cc143fb6e8ddc73983b8f60ec0a1e"
+            }
       ]
         |> column
             [ spacing 10
-            , padding 10
+            , paddingXY 15 10
             , Background.color white
             , Border.rounded 5
             , Border.color colors.accent1
             , Border.width 4
-            , width (px 400)
+            , cappedWidth 450
                 |> whenAttr (not model.isMobile)
             ]
     ]
@@ -76,7 +91,7 @@ viewHeader model =
 viewTable model =
     let
         hdr =
-            text >> el [ Font.bold ]
+            text >> el [ Font.bold, monospaceFont ]
 
         cols =
             [ { header = hdr "Name"
@@ -267,6 +282,14 @@ black =
 
 monospaceFont =
     Font.family [ Font.monospace ]
+
+
+mainFont =
+    Font.family [ Font.typeface "Roboto" ]
+
+
+displayFont =
+    Font.family [ Font.typeface "Press Start 2P" ]
 
 
 hover : Attribute msg
