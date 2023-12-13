@@ -65,7 +65,7 @@ viewHeader model =
             ]
     , [ para [ Font.bold, Font.size 22, monospaceFont ] "#OPOS - Only playable on Solana"
       , para [ Font.size 17 ] "All the Solana games that can be played on Mainnet right now."
-      , newTabLink
+      , [ newTabLink
             [ hover
             , Font.size 17
             , Font.underline
@@ -73,6 +73,16 @@ viewHeader model =
             { label = text "More resources"
             , url = "https://gist.github.com/ronanyeah/8c3cc143fb6e8ddc73983b8f60ec0a1e"
             }
+        , newTabLink
+            [ hover
+            , Font.size 17
+            , Font.underline
+            ]
+            { label = text "Submit a game"
+            , url = "https://github.com/ronanyeah/solana-games-gg"
+            }
+        ]
+            |> row [ spacing 10 ]
       ]
         |> column
             [ spacing 10
