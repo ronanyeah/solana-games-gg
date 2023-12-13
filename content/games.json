@@ -1,5 +1,14 @@
 [
   {
+    "name": "Silicon Valley BONK",
+    "description": "A race against time with grand rewards.",
+    "website": "https://svbonk.com",
+    "x": "bonk_inu",
+    "nfts": [],
+    "tokens": ["BONK"],
+    "genres": ["raffle"]
+  },
+  {
     "name": "Star Atlas",
     "description": "A grand strategy game of space exploration, territorial conquest, political domination, and more.",
     "website": "https://staratlas.com",
